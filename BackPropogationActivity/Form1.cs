@@ -222,16 +222,16 @@ namespace BackPropogationActivity
 
             nn.run();
 
-            outputBox.Text = "" + nn.getOuputData(0);
+            
 
             double check = Convert.ToDouble(outputBox.Text);
             if(check > 0.6)
             {
-                outputBox2.Text = "True (AND gate: both inputs are 1). Train the model if inaccurate.";
+                outputBox2.Text = "**True** (AND gate: both inputs are 1). Train the model if inaccurate.";
             }
             else
             {
-                outputBox2.Text = "False (AND gate: one or more inputs are 0). Train the model if inaccurate.";
+                outputBox2.Text = "**False** (AND gate: one or more inputs are 0). Train the model if inaccurate.";
             }
         }
 
